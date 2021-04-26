@@ -2,12 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>Luke Swiderski</title>
         {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'personalSite/main.css' %}" />
     </head>
     <body>  
-            <div class="grid-container">
+            <div class="grid-container mobile">
               <div class="grid-item">
                 <h1 class="deets">Luke Swiderski</h1>
                 <p class='accent deets'>
@@ -19,7 +20,7 @@
                 </p>
               </div>
               <div class="grid-item">
-                <img src="{% static 'personalSite/LukeAtHome.jpg' %}" alt="Luke Swiderski" class="image">
+                <img src="{% static 'personalSite/LukeAtHome.jpg' %}" alt="Luke Swiderski" class="image hidden-mobile">
               </div>
               <div class="grid-item">
                 <h2 >Open Source Contributions:</h2>
@@ -32,7 +33,7 @@
                 <a class="issue" href="https://phabricator.services.mozilla.com/D69397">Merged Code</a>
               </div>
               <div class="grid-item">
-                <img src="{% static 'personalSite/inlinePreview.png' %}" alt="debug line" class="screen-cap">
+                <img src="{% static 'personalSite/inlinePreview.png' %}" alt="debug line" class="screen-cap hidden-mobile">
               </div>  
               <div class="grid-item">
                 <p class="issue"><strong>Bug: Content Out Of Seperator Line</strong></p>
@@ -40,7 +41,7 @@
                 <a class="issue" href="https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2491926">Merged Code</a>
               </div>
               <div class="grid-item">
-                <img src="{% static 'personalSite/chromeSettings.png' %}" alt="chrome settings" class="screen-cap">
+                <img src="{% static 'personalSite/chromeSettings.png' %}" alt="chrome settings" class="screen-cap hidden-mobile">
               </div>  
               <div class="grid-item"></div>
               <div class="grid-item"></div>
